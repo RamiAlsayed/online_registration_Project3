@@ -207,13 +207,13 @@ button {
     .main {
 
         width: 400px;
-        align-self: center;
+        align-self: flex-end;
     }
 
 
     select {
         width: 400px;
-        align-self: center;
+        align-self: flex-end;
 
     }
 
@@ -221,8 +221,8 @@ button {
 
         max-width: 140px;
 
-       align-self: center;
-       margin-left: -250px;
+       align-self: flex-start;
+       margin-left: 200px;
 
     }
 
