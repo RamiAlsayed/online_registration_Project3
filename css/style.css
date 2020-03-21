@@ -7,7 +7,7 @@
 body {
     font-family: 'Merriweather', serif;
     margin: auto;
-    
+
 }
 
 header h1 {
@@ -17,8 +17,8 @@ header h1 {
     text-align: center;
     padding: 15px;
     margin: 0 auto;
-    
-    
+
+
 }
 
 h2 {
@@ -35,7 +35,7 @@ p {
     margin-bottom: 0 auto;
     /* border-width: 10px; */
     margin-bottom: 30px;;
-    
+
 }
 
 .HRhead {
@@ -55,8 +55,8 @@ form {
     margin-right: 10px;
     margin-left: 10px;
 
-    
-    
+
+
 
 }
 
@@ -69,7 +69,7 @@ label {
 
     color: rgb(169, 171, 182);
     margin-bottom: 10px;
-    
+
 }
 
 input {
@@ -79,10 +79,10 @@ input {
    height: 41px;
    margin-bottom: 15px;
    border-style: none;
-  
-   
-   
-   
+
+
+
+
 }
 
 ::placeholder{
@@ -112,14 +112,14 @@ select {
 .zip {
 
     width: 50%;
-    
+
 }
 
 hr {
 
    width: 300px;
    border: 1px solid black;
-  
+
 }
 
 .newsL {
@@ -133,7 +133,7 @@ label.check {
   flex-wrap: nowrap;
   flex-direction: row;
   font-size: 1em;
- 
+
 
 }
 
@@ -144,10 +144,10 @@ label.check {
 
 label.NEwsL {
 
-    
+
    margin-top: -6px;
    align-items: center;
-   
+
 }
 
 .topic {
@@ -183,38 +183,34 @@ button {
 
   @media screen and (min-width: 768px) {
 
-    .display {
-        
-        margin-left: 100px;
 
-    }
-       
+
     form {
 
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        margin-right: 10px;
-        margin-left: 10px;
-        justify-content: center;
-         
+        max-width: 1000px;
+
+    }
+
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
     }
 
     label {
         align-self: flex-start;
-       
-        
-        
+
+
     }
 
     .main {
 
-        
         width: 400px;
         align-self: center;
     }
-    
-    
+
+
     select {
         width: 400px;
         align-self: center;
@@ -224,17 +220,17 @@ button {
     .zip {
 
         max-width: 140px;
-       
+
        align-self: center;
        margin-left: -250px;
-        
+
     }
 
     hr {
 
         width: 600px;
         border: 1px solid black;
-       
+
      }
 
      .topic {
@@ -254,9 +250,3 @@ button {
      }
 
   }
-
-
-
-
-
-

@@ -17,14 +17,15 @@
     </header>
       <hr class="HRhead">
       <hr class="Brh">
-    <form class="display" action="index.html" method="POST">
+    <div class="form-container">
+      <form class="display" action="index.html" method="POST">
 
         <label class="contact">Contact Information</label><br>
 
 
         <label class="Lform" for="name">Full Name</label>
         <input class="main" type="text" id="name" name="user_name" placeholder="Required">
-        
+
         <label class="Lform" for="mail">Email Address</label>
         <input class="main" type="email" id="mail" name="user_email" placeholder="Required">
 
@@ -44,14 +45,14 @@
             <option value="new york">New York</option>
             <option value="ohio">Ohio</option>
             <option value="south carolina">South Carolina</option>
-            
+
         </select>
 
         <label class="Lform" for="zip">Zip Code</label>
         <input class="zip" type="number" id="zip" name="user_zip">
 
         <hr>
-        
+
         <h3>Newsletter</h3>
         <p class="newsL">Select the newsletters you would like to recieve</p>
         <div class="check">
@@ -64,14 +65,15 @@
             <input type="radio" id="html" value="html" name="user_format"><label for="html">HTML</label><br>
             <input type="radio" id="plain" value="plain" name="user_format"><label for="plain">Plain text</label>
         </div>
-        
+
         <label class="topic" for="topic">Other Topics You'd Like to Hear About</label>
       <textarea id="topic" name="user_topics"></textarea>
 
         <button type="submit" value="submit">Sign Up</button>
 
-    </form>
-  
+     </form>
+    </div>
+
     <footer class="container">
       Copyright The Code Review
     </footer>
@@ -82,7 +84,7 @@
 
 
     </form>
-    
-    
+
+
 </body>
 </html>
