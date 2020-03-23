@@ -19,52 +19,67 @@
       <hr class="Brh">
     <div class="form-container">
       <form class="display" action="index.html" method="POST">
+        <fieldset>
+          <legend class="contact">Contact Information</legend><br>
 
-        <label class="contact">Contact Information</label><br>
+          <div class="row">
+            <label class="Lform" for="name">Full Name</label>
+            <input class="main" type="text" id="name" name="user_name" placeholder="Required">
+          </div>
+
+          <div class="row">
+            <label class="Lform" for="mail">Email Address</label>
+            <input class="main" type="email" id="mail" name="user_email" placeholder="Required">
+          </div>
+
+          <div class="row">
+            <label class="Lform" for="phone">Phone Number</label>
+            <input class="main" type="tel" id="phone" name="user_phone">
+          </div>
+
+          <div class="row">
+            <label class="Lform" for="street">Street Address</label>
+            <input class="main" type="text" id="street" name="user_street">
+          </div>
+
+          <div class="row">
+            <label class="Lform" for="city">City</label>
+            <input class="main" type="text" id="city" name="user_city">
+          </div>
 
 
-        <label class="Lform" for="name">Full Name</label>
-        <input class="main" type="text" id="name" name="user_name" placeholder="Required">
+          <div class="row">
+            <label class="Lform" for="state-select">State</label>
+            <select name="state" id="state-select" >
+                <option value="">Choose State</option>
+                <option value="alabama">Alabama</option>
+                <option value="new york">New York</option>
+                <option value="ohio">Ohio</option>
+                <option value="south carolina">South Carolina</option>
+            </select>
+          </div>
 
-        <label class="Lform" for="mail">Email Address</label>
-        <input class="main" type="email" id="mail" name="user_email" placeholder="Required">
-
-        <label class="Lform" for="phone">Phone Number</label>
-        <input class="main" type="number" id="phone" name="user_phone">
-
-        <label class="Lform" for="street">Street Address</label>
-        <input class="main" type="text" id="street" name="user_street">
-
-        <label class="Lform" for="city">City</label>
-        <input class="main" type="text" id="city" name="user_city">
-
-        <label class="Lform" for="state-select">State</label>
-        <select name="state" id="state-select" >
-            <option value="">Choose State</option>
-            <option value="alabama">Alabama</option>
-            <option value="new york">New York</option>
-            <option value="ohio">Ohio</option>
-            <option value="south carolina">South Carolina</option>
-
-        </select>
-
-        <label class="Lform" for="zip">Zip Code</label>
-        <input class="zip" type="number" id="zip" name="user_zip">
+          <div class="row">
+            <label class="Lform" for="zip">Zip Code</label>
+            <input class="zip" type="number" id="zip" name="user_zip">
+          </div>
+        </fieldset>
 
         <hr>
-
-        <h3>Newsletter</h3>
-        <p class="newsL">Select the newsletters you would like to recieve</p>
-        <div class="check">
-            <input  type="checkbox" id="html" value="html_news" name="user_html"><label class="NEwsL" for="html">HTML News</label><br>
-            <input  type="checkbox" id="css" value="css_news" name="user_css"><label class="NEwsL" for="css">CSS News</label><br>
-            <input  type="checkbox" id="javascript" value="javascript_news" name="user_javascript"><label class="NEwsL" for="javascript">Javascript News</label><br>
+        <fieldset>
+          <legend>Newsletter</legend>
+          <p class="newsL">Select the newsletters you would like to recieve</p>
+          <div class="check">
+              <input  type="checkbox" id="html" value="html_news" name="user_html"><label class="NEwsL" for="html">HTML News</label><br>
+              <input  type="checkbox" id="css" value="css_news" name="user_css"><label class="NEwsL" for="css">CSS News</label><br>
+              <input  type="checkbox" id="javascript" value="javascript_news" name="user_javascript"><label class="NEwsL" for="javascript">Javascript News</label><br>
+          </div>
+          <label class="news">Newsletter format</label>
+          <div class="radio">
+              <input type="radio" id="htmlR" value="html" name="user_format"><label for="htmlR">HTML</label><br>
+              <input type="radio" id="plain" value="plain" name="user_format"><label for="plain">Plain text</label>
         </div>
-        <label class="news">Newsletter format</label>
-        <div class="radio">
-            <input type="radio" id="html" value="html" name="user_format"><label for="html">HTML</label><br>
-            <input type="radio" id="plain" value="plain" name="user_format"><label for="plain">Plain text</label>
-        </div>
+        </fieldset>
 
         <label class="topic" for="topic">Other Topics You'd Like to Hear About</label>
       <textarea id="topic" name="user_topics"></textarea>
@@ -77,13 +92,6 @@
     <footer class="container">
       Copyright The Code Review
     </footer>
-
-
-
-
-
-
-    </form>
 
 
 </body>

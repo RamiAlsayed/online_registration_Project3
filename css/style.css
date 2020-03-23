@@ -1,13 +1,11 @@
+
 * {
-
     box-sizing: border-box;
-    font-size: 1em;
 }
-
 body {
     font-family: 'Merriweather', serif;
     margin: auto;
-
+    font-size: 1em;
 }
 
 header h1 {
@@ -32,9 +30,9 @@ p {
     color: rgb(216, 216, 216);
     font-size: small;
     /* border-bottom: 20px double black; */
-    margin-bottom: 0 auto;
+    /* margin-bottom: 0 auto; */
     /* border-width: 10px; */
-    margin-bottom: 30px;;
+    /* margin-bottom: 30px; */
 
 }
 
@@ -55,10 +53,15 @@ form {
     margin-right: 10px;
     margin-left: 10px;
 
-
-
-
 }
+
+fieldset {
+    border: 0;
+}
+
+
+
+
 
 .contact {
 
@@ -105,6 +108,7 @@ select {
    height: 41px;
    margin-bottom: 15px;
    color: rgb(175, 168, 168);
+   border: 0;
 
 
 }
@@ -142,13 +146,13 @@ label.check {
     margin-top: 30px;
 }
 
-label.NEwsL {
+/* label.NEwsL {
 
 
    margin-top: -6px;
    align-items: center;
 
-}
+} */
 
 .topic {
 
@@ -183,7 +187,11 @@ button {
 
   @media screen and (min-width: 768px) {
 
-
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     form {
 
@@ -198,11 +206,11 @@ button {
 
     }
 
-    label {
+    /* label {
         align-self: flex-start;
 
 
-    }
+    } */
 
     .main {
 
