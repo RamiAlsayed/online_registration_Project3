@@ -1,6 +1,7 @@
 
 * {
     box-sizing: border-box;
+    font-size: 17px;
 }
 body {
     font-family: 'Merriweather', serif;
@@ -29,10 +30,6 @@ p {
     padding: 10px;
     color: rgb(216, 216, 216);
     font-size: small;
-    /* border-bottom: 20px double black; */
-    /* margin-bottom: 0 auto; */
-    /* border-width: 10px; */
-    /* margin-bottom: 30px; */
 
 }
 
@@ -45,7 +42,8 @@ p {
     margin-bottom: 26px;
 }
 
-form {
+form,
+.row {
 
     display: flex;
     flex-wrap: wrap;
@@ -54,6 +52,7 @@ form {
     margin-left: 10px;
 
 }
+
 
 fieldset {
     border: 0;
@@ -88,6 +87,8 @@ input {
 
 }
 
+
+
 ::placeholder{
     color: rgb(175, 168, 168);
     text-align: right;
@@ -99,7 +100,7 @@ input {
 input:focus,
 select:focus,
 textarea:focus {
-  background-color: tomato;
+  background-color: rgb(229, 207, 192);
 }
 
 select {
@@ -132,27 +133,29 @@ hr {
     color: rgb(169, 171, 182);
 }
 
+
+
 label.check {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   flex-direction: row;
-  font-size: 1em;
+
 
 
 }
 
+
+
+.check {
+
+    margin-bottom: 30px;
+
+}
 .news {
 
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
-/* label.NEwsL {
-
-
-   margin-top: -6px;
-   align-items: center;
-
-} */
 
 .topic {
 
@@ -190,12 +193,14 @@ button {
     .row {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
+
     }
 
     form {
 
         max-width: 1000px;
+
 
     }
 
@@ -204,18 +209,23 @@ button {
       flex-direction: column;
       align-items: center;
 
+
     }
 
-    /* label {
-        align-self: flex-start;
 
-
-    } */
 
     .main {
 
         width: 400px;
         align-self: flex-end;
+        flex-basis: auto;
+
+    }
+
+    .Lform     {
+
+       margin-bottom: -25px;
+
     }
 
 
@@ -230,7 +240,7 @@ button {
         max-width: 140px;
 
        align-self: flex-start;
-       margin-left: 200px;
+       margin-left: 147px;
 
     }
 
